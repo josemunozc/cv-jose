@@ -11,4 +11,9 @@
 *.tmp
 *.xref
 
+*.bcf
+*.blg
+*.bbl
+*.DS_Store
+
 !cv_template.tex
