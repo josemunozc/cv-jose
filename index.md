@@ -92,7 +92,7 @@ Main responsibilities within the project:
 
 *Dec 2021* ITIL 4 Foundation -- QUANTA
 
-*Mar 2021* Supervised Machine Learning: Regression and Classification -- Standord online | Coursera
+*Mar 2021* Supervised Machine Learning: Regression and Classification -- Standord online, Coursera
 
 *Oct 2020* Certified Instructor -- Software Carpentries
 
