@@ -1,21 +1,46 @@
 \documentclass[10pt,a4paper,sans]{moderncv}        
 
 % moderncv themes
-\moderncvstyle{classic} % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{black} % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+\moderncvstyle{contemporary} % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{cerulean} % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
 \nopagenumbers{} % uncomment to suppress automatic page numbering for CVs longer than one page
+%\usepackage[english]{babel}
+% to show numerical labels in the bibliography ( default is to show no labels )
+\renewcommand*{\bibliographyitemlabel}{}
+\renewcommand{\refname}{Articles}
+% bibliography with mutiple entries
+\usepackage{multibib}
+\newcites{journal}{Articles}
+\newcites{conferences}{Conference papers}
+\newcites{misc}{Acknowledged}
+
 \usepackage[$language]{babel}
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
+\usepackage[hmargin=0.5in,vmargin=0.5in]{geometry}
+%\usepackage[scale=0.75]{geometry}
 \setlength{\hintscolumnwidth}{3.15cm} % if you want to change the width of the column with the dates
 
 % personal data
 $personal_data
 
 \begin{document}
+
 \makecvtitle
 
 $content
+
+\section{Publications}
+\nocitejournal{*}
+\bibliographystylejournal{abbrv}
+\bibliographyjournal{articles}
+
+\nociteconferences{*}
+\bibliographystyleconferences{abbrv}
+\bibliographyconferences{conferences}
+
+\nocitemisc{*}
+\bibliographystylemisc{abbrv}
+\bibliographymisc{misc}
 
 \end{document}

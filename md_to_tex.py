@@ -30,6 +30,21 @@ def split_cv_line(txt):
     title = txt[1].strip()
     return side_text, title
 
+class CvBibliography():
+
+    def __init__(self, title):
+        self.title = title
+        self.style = "plainurl"
+        self.add_articles="\\printbibliography[title=Articles, type=article]"
+        self.add_acknowledgments="\\printbibliography[title=Acknowledged, type=misc]"
+        self.add_books="\\printbibliography[title=Books, type=books]"
+        self.add_conferences="\\printbibliography[title=Conference Papers, type=inproceedings]"
+
+    def to_tex(self):
+        return "\\renewcommand{{\\refname}}{{{}}}\n\\nocite{{*}}\n{}\n{}\n{}\n{}\n".format(self.title,self.add_articles,self.add_acknowledgments,self.add_books,self.add_conferences)
+        #return "\\renewcommand{{\\refname}}{{{}}}\n\\nocite{{*}}\n\\bibliographystyle{{{}}}\n\\bibliography{{{}}}".format(self.title,self.style,"publications.bib")
+
+
 class CvSection():
 
     def __init__(self, title):
@@ -109,7 +124,8 @@ class CurriculumVitae():
                 continue
             
             if line.startswith("## "):
-                self.content.append(CvSection(line.removeprefix("## ")))
+                section_name=line.removeprefix("## ")
+                self.content.append(CvSection(section_name))
                 i += 1
                 continue
 
@@ -128,6 +144,10 @@ class CurriculumVitae():
 
             i += 1
 
+    def add_publications_to_content(self):
+        #hacky way to include bibtex file if section is "Publications"
+        self.content.append(CvBibliography('Publications'))
+
     def personal_data_to_tex(self):
         tex_out = []
         tex_out.append("\\name {{{}}}{{{}}}".format(self.name[0], self.name[1]))
@@ -137,7 +157,10 @@ class CurriculumVitae():
             tex_out.append("\\photo[80pt][0pt]{{{}}}".format(self.photo))
         if self.email is not None:
              tex_out.append("\\email{{{}}}".format(self.email))
-        if self.homepage is not None:
+        #if self.homepage is not None:
+        if self.homepage:
+             #skip if string is empty
+             print(self.homepage)
              tex_out.append("\\homepage{{{}}}".format(self.homepage))
         if self.linkedin is not None:
              tex_out.append("\\social[linkedin]{{{}}}".format(self.linkedin))
@@ -150,6 +173,10 @@ class CurriculumVitae():
     def content_to_tex(self):
         content_lines = [item.to_tex() for item in self.content]
         return "\n".join(content_lines)
+    
+    def publications_to_tex(self):
+        publications_lines = [item.to_tex() for item in self.publications]
+        return "\n".join(publications_lines)
 
     def to_tex(self):
         tex_template = open("cv_template.tex", "rt").read()
@@ -167,4 +194,5 @@ if __name__ == "__main__":
         language = None
     cv = CurriculumVitae(language)
     cv.from_markdown(open(src_filename, "rt").read())
+    #cv.add_publications_to_content()
     open(os.path.splitext(src_filename)[0] + ".tex", "wt").write(cv.to_tex())
