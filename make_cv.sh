@@ -2,11 +2,22 @@
 
 set -eu
 
-pandoc -s cv_en_john_doe.md -o cv_en_john_doe.docx
-python md_to_tex.py cv_en_john_doe.md english
-pdflatex cv_en_john_doe.tex
+pandoc -s resume.md -o resume.docx
+python md_to_tex.py resume.md english
+pdflatex resume.tex
 bibtex journal
 bibtex conferences
 bibtex misc
-pdflatex cv_en_john_doe.tex
-pdflatex cv_en_john_doe.tex
+pdflatex resume.tex
+pdflatex resume.tex
+
+# Create a separate file with list of references in markdown
+# these will be added to the base resume using cat
+pandoc -t markdown_strict --citeproc pandoc-bib.md -o publications.md --bibliography publications.bib
+
+# using index.md to publish in GitHub
+cat resume.md > index.md
+cat publications.md >> index.md
+
+# do some cleaning
+rm -f *.bcf *.blg *.bbl *.aux *.log
