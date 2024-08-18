@@ -102,3 +102,57 @@ Main responsibilities within the project:
 
 *Nov 2022* Sustained Outstanding Contribution Award -- Cardiff University
 
+## Publications
+
+Alcalá, Gerardo, Luis Fernando Grisales-Noreña, Quetzalcoatl
+Hernandez-Escobedo, Jose Javier Muñoz-Criollo, and J. D.
+Revuelta-Acosta. 2021. “SHP Assessment for a Run-of-River (RoR) Scheme
+Using a Rectangular Mesh Sweeping Approach (MSA) Based on GIS.”
+*Energies* 14 (11).
+https://doi.org/<https://doi.org/10.3390/en14113095>.
+
+Boostrom, Ian, Edward A. R. Portal, Owen B. Spiller, Timothy R. Walsh,
+and Kirsty Sands. 2022. “Comparing Long-Read Assemblers to Explore the
+Potential of a Sustainable Low-Cost, Low-Infrastructure Approach to
+Sequence Antimicrobial Resistant Bacteria with Oxford Nanopore
+Sequencing.” *Frontiers in Microbiology*.
+<https://doi.org/10.3389/fmicb.2022.796465>.
+
+Cleall, Peter J., José J. Muñoz-Criollo, Hassan J. Mobarek, and Steve W.
+Rees. 2017. “Potential of Adaptable Insulation Layers in Heat Storage
+and Thermal Pile Applications.” In *Proceedings of the 2nd Symposium on
+Coupled Phenomena in Environmental Geotechnics (Cpeg2)*. Leeds, UK.
+
+Farzana, Refath, Lim S Jones, Md Anisur Rahman, Kirsty Sands, Andries J
+van Tonder, Edward Portal, Jose J. Muñoz-Criollo, et al. 2023. “Genomic
+Insights into the Mechanism of Carbapenem Resistance Dissemination in
+Enterobacterales from a Tertiary Public Heath Setting in South Asia.”
+*Clinical Infectious Diseases* 76 (1): 119–33.
+https://doi.org/<https://doi.org/10.1093/cid/ciac287>.
+
+Munõz-Criollo, José J., Peter J. Cleall, and Michael J. Harbottle. 2017.
+“Coupled Biomass Growth and Flow in Unsaturated Soil.” In *Proceedings
+of the 2nd Symposium on Coupled Phenomena in Environmental Geotechnics
+(Cpeg2)*. Leeds, UK.
+
+Muñoz-Criollo, José J., Peter J. Cleall, and Steve W. Rees. 2013a.
+“Analysis of Inter-Seasonal Heat Fluxes in Soils.” In, 57:2315–23.
+Energy Procedia. <https://doi.org/10.1016/j.egypro.2014.10.239>.
+
+———. 2013b. In *International Workshop on Geomechanics and Energy - the
+Ground as Energy Source and Storage*, 26–28. Lausanne, Switzerland.
+<https://doi.org/10.3997/2214-4609.20131947>.
+
+———. 2016a. “Factors Influencing Collection Performance of Near Surface
+Interseasonal Ground Energy Collection and Storage Systems.”
+*Geomechanics for Energy and the Environment* 6: 45–57.
+https://doi.org/<https://doi.org/10.1016/j.gete.2016.04.001>.
+
+———. 2016b. “Modelling Thermal Fluxes at the Soil Surface.”
+*Environmental Geotechnics* 6 (6): 392–405.
+https://doi.org/<https://doi.org/10.1680/jenge.15.00075>.
+
+Peter J. Cleall, Steve W. Rees, José J. Muñoz-Criollo. 2015. “Analytical
+Solutions for Temperature Profiles and Stored Energy Using
+Meteorological Data.” *Transport in Porous Media* 106: 181–99.
+<https://doi.org/10.1007/s11242-014-0395-3>.
