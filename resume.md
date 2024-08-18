@@ -43,7 +43,7 @@ Main responsibilities within the position:
 
 - Lead the delivery of training and enhanced support for HPC users. This includes the proposal, development, enhancement and maintenance of new and existing training courses based on user feedback and help request evidence.
 - Lead the development user facing documentation covering the main aspects of using HPC systems. This includes the proposal and testing of new methods of user engagement with the objective of optimising the dissemination of best HPC practices.
-- Support and monitor the use of software on HPC systems ensuring efficient applications and ease of use. This includes the assessment, development, tunning and support of a broad base of software packages and applications that reflect the   requirements of researchers.
+- Support and monitor the use of software on HPC systems ensuring efficient applications and ease of use. This includes the assessment, development, tuning and support of a broad base of software packages and applications that reflect the   requirements of researchers.
 - Contribute to the delivery of white papers, mini projects and publications through enhanced project support.
 - Maintain application support processes, and check that all requests for support are dealt with according to agreed procedures. Use of application management software and tools to investigate issues, collect performance statistics and create reports.
 
@@ -65,7 +65,7 @@ Part of INSPIRE project financed (£700K) by the Natural Environment Research Co
 
 Main responsibilities within the project:
 
-- Development of bespoke numerical and analytical models to describe heterogeneous flow processes and resource mobilisation and transport. This includes the use of the finite element method for modelling of transient, heterogeneous and microbiologically manipulated flow in porous geological materials via consideration of multiscale pore networks. The numerical model is validated against experimental data carried out by project partners.
+- Development of bespoke numerical and analytical models to describe heterogeneous flow processes and resource mobilisation and transport. This includes the use of the finite element method for modelling of transient, heterogeneous and microbiologically manipulated flow in porous geological materials via consideration of multi-scale pore networks. The numerical model is validated against experimental data carried out by project partners.
 - Identification and achievement of research goals.
 - Collaboration with project’s industrial partners to explore practical aspects of the proposed system in a range of different real field environments.
 - To undertake numerical analysis and contribute intellectually to the project thorough the critical interpretation of data.
@@ -82,7 +82,7 @@ Main responsibilities within the project:
 
 *2010* MSc in Engineering -- National Autonomous University of Mexico
 
-*2008* B.S Engineering Physics -- Autonomous University of Yucat\'an
+*2008* B.S Engineering Physics -- Autonomous University of Yucatán
 
 
 
